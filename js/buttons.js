@@ -164,28 +164,62 @@ function toggleBankInfo() {
     }
 }
 
-function donar(preferenceId) {
-    // Ensure the container exists
-    const mpContainer = document.getElementById('mp-container');
-    if (!mpContainer) {
-        console.error('mp-container element not found');
-        return;
-    }
+function showCancelButton(donateButton, preferenceId) {
+    // Encuentra el contenedor de donación más cercano al botón
+    const donationContainer = donateButton.closest('.donation-container');
+    const cancelButton = donationContainer.querySelector('.cancel-btn');
+    const mpContainer = donationContainer.querySelector('.mp-container');
 
-    // Remove any existing script
+    // Oculta el botón de donación y muestra el botón de cancelar
+    donateButton.classList.add('hidden');
+    cancelButton.classList.remove('hidden');
+
+    // Elimina cualquier script existente
     const existingScript = mpContainer.querySelector('script');
     if (existingScript) {
         existingScript.remove();
     }
 
-    // Create new script element
+    // Crea un nuevo elemento script
     const script = document.createElement('script');
     script.src = 'https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js';
     script.setAttribute('data-preference-id', preferenceId);
     script.setAttribute('data-source', 'button');
 
-    // Append the script to the placeholder container
+    // Configura el evento de carga del script
+    script.onload = function() {
+        // Inicia el flujo de pago automáticamente
+        const checkout = new window.MercadoPago.Checkout({
+            preference: {
+                id: preferenceId
+            }
+        });
+
+        checkout.open();
+    };
+
+    // Añade el script al contenedor placeholder
     mpContainer.appendChild(script);
+}
+
+function hideCancelButton(cancelButton) {
+    // Encuentra el contenedor de donación más cercano al botón
+    const donationContainer = cancelButton.closest('.donation-container');
+    const donateButton = donationContainer.querySelector('.donate-btn');
+    const mpContainer = donationContainer.querySelector('.mp-container');
+
+    // Muestra el botón de donación y oculta el botón de cancelar
+    donateButton.classList.remove('hidden');
+    cancelButton.classList.add('hidden');
+
+    // Elimina el script de Mercado Pago
+    const existingScript = mpContainer.querySelector('script');
+    if (existingScript) {
+        existingScript.remove();
+    }
+
+    // Opcional: eliminar el contenedor mp-container si es necesario
+    mpContainer.innerHTML = ''; // Limpia el contenido del contenedor
 }
 
 function toggleInfo() {

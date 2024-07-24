@@ -474,6 +474,7 @@ p {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+    justify-content: flex-start;
 }
 
 /* Estilos para el logo de Mercado Pago */
@@ -531,4 +532,32 @@ p {
 .location-content a:hover {
     color: #fff;
     font-weight: bold;
+}
+
+.cancel-btn {
+background-color: red; /* Color de fondo rojo */
+color: white; /* Color del texto blanco */
+border: none; /* Sin borde */
+padding: 7px 10px;     
+margin-left: 20px; /* Espaciado de 20px en el lado izquierdo */
+margin-right: 10px; /* Espaciado de 10px en el lado derecho */
+cursor: pointer; /* Cursor de puntero */
+font-size: 16px; /* Tamaño de fuente */
+border-radius: 5px; /* Bordes redondeados */
+transition: background-color 0.3s; /* Transición suave para el color de fondo */
+white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+
+.cancel-btn:hover {
+background-color: darkred; /* Color de fondo rojo oscuro al pasar el ratón */
+}
+
+.hidden {
+display: none;
+}
+
+.mp-container {
+display: flex;
+align-items: center; /* Alinea verticalmente al centro */
 }
