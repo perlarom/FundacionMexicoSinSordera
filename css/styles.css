@@ -467,7 +467,7 @@ p {
 
 /* Estilos para los contenedores de donación */
 .donation-container {
-    display: flex;
+    display: block;
     align-items: center;
     margin-bottom: 20px;
     padding: 10px;
@@ -475,12 +475,15 @@ p {
     border-radius: 5px;
     background-color: #fff;
     justify-content: flex-start;
+    flex-direction: column;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    box-sizing: border-box;
 }
 
 /* Estilos para el logo de Mercado Pago */
 .MercadoPagoLogo {
-    width: 50px; /* ajusta el tamaño según sea necesario */
-    margin-right: 10px;
+    width: 100px;
+    height: auto; /* ajusta el tamaño según sea necesario */
     margin-bottom: auto;
 }
 
@@ -535,19 +538,17 @@ p {
 }
 
 .cancel-btn {
-background-color: red; /* Color de fondo rojo */
-color: white; /* Color del texto blanco */
-border: none; /* Sin borde */
-padding: 7px 10px;     
-margin-left: 20px; /* Espaciado de 20px en el lado izquierdo */
-margin-right: 10px; /* Espaciado de 10px en el lado derecho */
-cursor: pointer; /* Cursor de puntero */
-font-size: 16px; /* Tamaño de fuente */
-border-radius: 5px; /* Bordes redondeados */
-transition: background-color 0.3s; /* Transición suave para el color de fondo */
-white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    background-color: red; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 9px 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cursor de puntero */
+    margin-right: 10px;
+    font-size: 14px; /* Tamaño de fuente */
+    border-radius: 4px; /* Bordes redondeados más pequeños */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
-
 
 .cancel-btn:hover {
 background-color: darkred; /* Color de fondo rojo oscuro al pasar el ratón */
@@ -558,6 +559,8 @@ display: none;
 }
 
 .mp-container {
-display: flex;
-align-items: center; /* Alinea verticalmente al centro */
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 10px; /* Espacio entre el botón de cancelar y el contenedor del pago */
 }
