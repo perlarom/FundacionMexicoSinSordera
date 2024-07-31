@@ -643,13 +643,43 @@ display: none;
     background: url('../img/Fondo.png') no-repeat center center;
     background-size: cover;
     padding: 20px;
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     overflow-y: auto;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
+
+@media (max-width: 1200px) {
+    .modal-content {
+        width: 60%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .modal-content {
+        width: 65%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        width: 80%;
+        height: 60%;
+        padding: 10px;
+    }
+}
+
 .close {
     color: grey;
     position: absolute;
