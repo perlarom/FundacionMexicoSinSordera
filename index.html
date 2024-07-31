@@ -639,18 +639,18 @@
         <button class="btn custom-button" id="productsButton">
             <svg xmlns="http://www.w3.org/2000/svg" width="20.8" height="20.8" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
                 <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-              </svg>
-            Productos en Causa
+            </svg>
+            Productos y Servicios en Causa
             <i class="bi bi-three-dots-vertical icon-right"></i>
         </button>
+        
         <div class="content-container" id="productsContent">
             <div class="text-container">
                 <p>
-                    México Sin Sordera, hemos creado una serie de souveirs y servicios, para la recaudacion de fondos y
+                    México Sin Sordera, hemos creado una serie de souvenirs y servicios, para la recaudación de fondos y
                     poder ayudar a que más niños puedan escuchar los sonidos de la vida.
                 </p>
                 <div class="product-container">
-                    <!-- Aquí van los productos -->
                     <div class="product-item">
                         <img src="img/Noyolo.png" alt="Noyolo" class="product-image">
                         <div class="product-name">Amigurumi de Mi Noyolo</div>
@@ -662,73 +662,109 @@
                         <div class="product-name">Pluma de Mi Noyolo</div>
                         <div class="product-description">Plumas elaboradas de pasta francesa o foamy moldeable</div>
                         <div class="product-price">$70.00</div>
-                        <!-- <button class="donate-btn" onclick="showCancelButton(this, '812215176-25634d8f-3f30-46e5-9ed2-f1af1e3e7637')">Comprar</button> -->
                     </div>
                     <div class="product-item">
                         <img src="img/Llavero-Madera.png" alt="Llavero-Madera" class="product-image">
                         <div class="product-name">Llavero de México Sin Sordera</div>
                         <div class="product-description">Hecho de Madera, con logo de la fundación e implante coclear</div>
-                        <div class="product-price">$70.00</div>
+                        <div class="product-price">$75.00</div>
                     </div>
                     <div class="product-item">
                         <img src="img/Llavero-Acrilico.png" alt="LLlavero-Acrilico" class="product-image">
                         <div class="product-name">Llavero de Implante Coclear</div>
-                        <div class="product-description">Hecho de acrilico</div>
+                        <div class="product-description">Hecho de acrílico</div>
                         <div class="product-price">$70.00</div>
                     </div>
                     <div class="product-item">
                         <img src="img/Gorra.png" alt="Gorra" class="product-image">
                         <div class="product-name">Gorra de México Sin Sordera</div>
-                        <div class="product-description">Bordado del lago de la fundación</div>
+                        <div class="product-description">Bordado del logo de la fundación</div>
                         <div class="product-price">$200.00</div>
                     </div>
                     <div class="product-item">
                         <img src="img/Taza.png" alt="Taza" class="product-image">
                         <div class="product-name">Taza México Sin Sordera</div>
-                        <div class="product-description">Taza de cerámicca con el logo de la fundación</div>
+                        <div class="product-description">Taza de cerámica con el logo de la fundación</div>
                         <div class="product-price">$120.00</div>
                     </div>
                     <div class="product-item">
-                        <img src="img/Audiometria.jpg" alt="Audiometria" class="product-image">
-                        <div class="product-name"> Audiometría</div>
+                        <img src="img/Audiometria.jpg" alt="Audiometría" class="product-image">
+                        <div class="product-name">Audiometría</div>
                         <div class="product-description">
                             Estudios necesarios para diagnóstico completo son:
                             <ul>
                                 <li>Audiometría aérea y ósea</li>
-                                <li>Logoadiometría</li>
+                                <li>Logoaudiometría</li>
                                 <li>Niveles de disconfort</li>
                             </ul>
                         </div>
                         <div class="product-price">$200.00</div>
                     </div>
+                    <div class="product-item">
+                        <img src="img/Salón.jpg" alt="Room" class="product-image">
+                        <div class="product-name">Salón de Eventos</div>
+                        <div class="product-description">
+                            ¿Vas a organizar un evento o capacitación y no cuentas con espacio?
+                            <p>Contáctanos, nosotros tenemos el espacio adecuado a tus necesidades.</p>
+                            <div class="more-info-2" style="color: blue; cursor: pointer;" onclick="openModal()">Más Información</div>
+                        </div>
+                    </div>
+                    <div id="infoModal" class="modal" style="display: none;">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p>
+                                Oficina ubicada en zona céntrica, Col. Roma<br>
+                                Aforo máximo 25 personas<br>
+                                Contamos con:<br>
+                                <ul>
+                                    <li>Pantalla 55”</li>
+                                    <li>Bocina</li>
+                                    <li>PC o Laptop</li>
+                                    <li>Internet</li>
+                                </ul>
+                                Servicios adicionales:<br>
+                                <ul>
+                                    <li>Coffe break</li>
+                                    <li>Bocadillos / Box lunch</li>
+                                    <li>Mesero</li>
+                                    <li>Maestro de ceremonias</li>
+                                    <li>Impresiones</li>
+                                    <li>Papelería para el evento</li>
+                                    <li>Rotafolio</li>
+                                    <li>Teams Digital</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
-
-        <button class="btn custom-button" id="courseButton">
-            <i class="bi bi-book icon-left"></i>
-            Registro al Curso
-            <i class="bi bi-three-dots-vertical icon-right"></i>
-        </button>
-        <div class="content-container" id="courseContent">
-            <button class="social-btn" onclick="window.open('https://docs.google.com/forms/d/1U6XX5JiytkD7XouGOXOCs7SN_25uRVuq9vM3tNZ2GJE/edit', '_blank')">
-                <i class="bi bi-arrow-right icon-left"></i>
-                <span>Regístrate al curso</span>               
+        
+            <button class="btn custom-button" id="courseButton">
+                <i class="bi bi-book icon-left"></i>
+                Registro al Curso
+                <i class="bi bi-three-dots-vertical icon-right"></i>
             </button>
-        </div>
-
-        <button class="btn custom-button" id="eventsButton">
-            <i class="bi bi-calendar-event icon-left"></i>
-            Registro a Eventos
-            <i class="bi bi-three-dots-vertical icon-right"></i>
-        </button>
-        <div class="content-container" id="eventsContent">
-            <button class="social-btn" onclick="window.open('https://docs.google.com/forms/d/1mhTs3gJjCVLJ2HyIovOSc1oFEbIRnQF0axePPWpkPvg/closedform', '_blank')">
-                <i class="bi bi-arrow-right icon-left"></i>
-                <span>Regístrate a Eventos</span>               
+            <div class="content-container" id="courseContent">
+                <button class="social-btn" onclick="window.open('https://docs.google.com/forms/d/1U6XX5JiytkD7XouGOXOCs7SN_25uRVuq9vM3tNZ2GJE/edit', '_blank')">
+                    <i class="bi bi-arrow-right icon-left"></i>
+                    <span>Regístrate al curso</span>               
+                </button>
+            </div>
+    
+            <button class="btn custom-button" id="eventsButton">
+                <i class="bi bi-calendar-event icon-left"></i>
+                Registro a Eventos
+                <i class="bi bi-three-dots-vertical icon-right"></i>
             </button>
+            <div class="content-container" id="eventsContent">
+                <button class="social-btn" onclick="window.open('https://docs.google.com/forms/d/1mhTs3gJjCVLJ2HyIovOSc1oFEbIRnQF0axePPWpkPvg/closedform', '_blank')">
+                    <i class="bi bi-arrow-right icon-left"></i>
+                    <span>Regístrate a Eventos</span>               
+                </button>
+            </div>
+            <img src="img/logo-niño.png" alt="Mascota" class="mascota"><br>
         </div>
-    <img src="img/logo-niño.png" alt="Mascota" class="mascota"><br>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
