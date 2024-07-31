@@ -121,6 +121,17 @@ document.getElementById('eventsButton').addEventListener('click', function() {
     }
 });
 
+document.getElementById('productsButton').addEventListener('click', function() {
+    var productsContent = document.getElementById('productsContent');
+    if (productsContent.style.display === 'none' || productsContent.style.display === '') {
+        productsContent.style.display = 'block';
+        this.classList.add('active');
+    } else {
+        productsContent.style.display = 'none';
+        this.classList.remove('active');
+    }
+});
+
 ////FUNCIONES////
 /*PARA SABER MÁS*/
 function toggleInfo() {
