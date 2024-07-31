@@ -8,6 +8,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -712,28 +717,44 @@
                     <div id="infoModal" class="modal" style="display: none;">
                         <div class="modal-content">
                             <span class="close" onclick="closeModal()">&times;</span><br>
-                            <p>
-                                Oficina ubicada en zona céntrica, Col. Roma<br>
-                                Aforo máximo 25 personas<br>
-                                Contamos con:<br>
-                                <ul>
-                                    <li>Pantalla 55”</li>
-                                    <li>Bocina</li>
-                                    <li>PC o Laptop</li>
-                                    <li>Internet</li>
-                                </ul>
-                                Servicios adicionales:<br>
-                                <ul>
-                                    <li>Coffe break</li>
-                                    <li>Bocadillos / Box lunch</li>
-                                    <li>Mesero</li>
-                                    <li>Maestro de ceremonias</li>
-                                    <li>Impresiones</li>
-                                    <li>Papelería para el evento</li>
-                                    <li>Rotafolio</li>
-                                    <li>Teams Digital</li>
-                                </ul>
-                            </p>
+                                <div class="circle-container">
+                                    <div class="circle">
+                                        <p class="circle-text">UBICACIÓN 📌<br>Zona céntrica, Col. Roma</p>
+                                    </div>
+                                    <div class="circle">
+                                        <p>AFORO 👤<br>Máximo 25 personas</p>
+                                    </div>
+                                </div>                            
+                                <div class="modal-body" style="align-items: center; justify-content: center;">
+                                    <div class="content-section">
+                                        <img src="img/Dispositivos.png" alt="Dispositivos" class="side-image">
+                                        <div class="text-content">
+                                            Contamos con:<br>
+                                            <ul>
+                                                <li>Pantalla 55”</li>
+                                                <li>Bocina</li>
+                                                <li>PC o Laptop</li>
+                                                <li>Internet</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="content-section">
+                                        <div class="text-content">
+                                            Servicios adicionales:<br>
+                                            <ul>
+                                                <li>Coffe break</li>
+                                                <li>Bocadillos / Box lunch</li>
+                                                <li>Mesero</li>
+                                                <li>Maestro de ceremonias</li>
+                                                <li>Impresiones</li>
+                                                <li>Papelería para el evento</li>
+                                                <li>Rotafolio</li>
+                                                <li>Teams Digital</li>
+                                            </ul>
+                                        </div>
+                                        <img src="img/Servicios.jpg" alt="Servicios" class="side-image">
+                                    </div>
+                                </div>
                         </div>
                     </div>  
                 </div>

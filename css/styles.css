@@ -643,13 +643,84 @@ display: none;
     background: url('../img/Fondo.png') no-repeat center center;
     background-size: cover;
     padding: 20px;
-    width: 60%;
+    width: 55%;
     height: 90%;
     overflow-y: auto;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
+
+.close {
+    color: grey;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.circle p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+   /* gap: 20px; */
+   align-items: center;
+   justify-content: center;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    margin-bottom: 20px;
+}
+
+.side-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; /* Margen derecho para la primera imagen */
+}
+
+.content-section:last-child .side-image {
+    margin-left: 20px; /* Margen izquierdo para la segunda imagen */
+    margin-right: 0;
+}
+
+.text-content {
+    flex: 1;
+   text-align: left;
+}
+
 
 @media (max-width: 1200px) {
     .modal-content {
@@ -678,19 +749,12 @@ display: none;
         height: 60%;
         padding: 10px;
     }
-}
-
-.close {
-    color: grey;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+    .side-image{
+        width: 100px;
+        height: auto;
+    }
+    .circle{
+        width: 120px;
+        height: 120px;
+    }
 }

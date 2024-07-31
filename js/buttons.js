@@ -259,3 +259,35 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    function updateCarousel() {
+        items.forEach((item, index) => {
+            item.classList.remove('active', 'prev', 'next');
+            if (index === currentIndex) {
+                item.classList.add('active');
+            } else if (index === (currentIndex + 1) % totalItems) {
+                item.classList.add('next');
+            } else if (index === (currentIndex - 1 + totalItems) % totalItems) {
+                item.classList.add('prev');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+    }
+
+    setInterval(nextSlide, 5000);
+    updateCarousel();
+});
