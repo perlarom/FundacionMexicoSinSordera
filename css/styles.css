@@ -675,19 +675,25 @@ display: none;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(70, 184, 169, 0.8) 0%, rgba(148, 193, 35, 0.8) 100%); /* Gradient background with transparency */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(70, 184, 169, 0.8), 0 4px 8px rgba(148, 193, 35, 0.8);
 }
 
 .circle p {
     margin: 0;
     font-size: 14px;
+    color: white;
+
+}
+
+.circle-text {
+    font-weight: bold; /* Negrita para el texto de UBICACIÓN y AFORO */
 }
 
 .modal-body {
@@ -791,7 +797,7 @@ display: none;
         height: auto;
     }
     .circle{
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 }
