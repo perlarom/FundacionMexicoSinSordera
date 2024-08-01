@@ -87,39 +87,6 @@ body {
 
 /*TEXTO*/
 /*NOMBRE*/
-.animatedText {
-    font-family: 'CustomFont', sans-serif;
-    white-space: nowrap; /* Evita el salto de línea */
-    overflow: hidden; /* Oculta el contenido desbordado */
-    border-right: 2px solid black; /* Cursor de tipo máquina de escribir */
-    animation: typing 10s steps(60, end) infinite, blink-caret .75s step-end infinite;
-    font-weight: bold;
-    font-size: large;
-    margin-bottom: 10px;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
-}
-
-.highlight {
-    color: #46b8a9; /* Color específico para una parte del texto */
-}
-
 p {
     color: #1e1e1e;
     text-align: center;
