@@ -58,7 +58,7 @@ body {
 .logo {
     max-height: 150px;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /*border-radius: 50%;*/
 }
 
@@ -95,6 +95,7 @@ body {
     animation: typing 10s steps(60, end) infinite, blink-caret .75s step-end infinite;
     font-weight: bold;
     font-size: large;
+    margin-bottom: 10px;
 }
 
 @keyframes typing {
