@@ -23,12 +23,14 @@
             <i class="bi bi-three-dots-vertical icon-right"></i>
         </button>
         <div class="content-container-nosotros" id="nosotrosContent">
-            <p>
-                México Sin Sordera es una Asociación Civil mexicana constituida en junio del 2018, con el propósito de beneficiar a las personas con discapacidad auditiva, conjugando acciones a través de la asesoría, orientación, gestión, respaldo y acompañamiento.
-            </p>
-            <p>
-                Todo esto desde la detección, la adaptación de auxiliares auditivos, cirugía de implante coclear u osteointegrado y hasta la rehabilitación auditiva.
-            </p>
+            <div class="text-container">
+                <p>
+                    México Sin Sordera es una Asociación Civil mexicana constituida en junio del 2018, con el propósito de beneficiar a las personas con discapacidad auditiva, conjugando acciones a través de la asesoría, orientación, gestión, respaldo y acompañamiento.
+                </p>
+                <p>
+                    Todo esto desde la detección, la adaptación de auxiliares auditivos, cirugía de implante coclear u osteointegrado y hasta la rehabilitación auditiva.
+                </p>
+            </div>
         </div>
 
         <button class="btn custom-button-nosotros" id="misionButton">
@@ -37,9 +39,11 @@
             <i class="bi bi-three-dots-vertical icon-right"></i>
         </button>
         <div class="content-container-nosotros" id="misionContent">
-            <p>
-                Trabajar incansablemente para mejorar la calidad de vida de las personas con discapacidad auditiva en México. Brindar apoyo, recursos y soluciones para que cada individuo con pérdida auditiva pueda alcanzar su máximo potencial, integrarse a la sociedad y vivir una vida plena y sin barreras, fomentando así un México inclusivo y accesible para todos.
-            </p>
+            <div class="text-container">
+                <p>
+                    Trabajar incansablemente para mejorar la calidad de vida de las personas con discapacidad auditiva en México. Brindar apoyo, recursos y soluciones para que cada individuo con pérdida auditiva pueda alcanzar su máximo potencial, integrarse a la sociedad y vivir una vida plena y sin barreras, fomentando así un México inclusivo y accesible para todos.
+                </p>
+            </div>
         </div>
         
         <button class="btn custom-button-nosotros" id="visionButton">
@@ -48,9 +52,11 @@
             <i class="bi bi-three-dots-vertical icon-right"></i>
         </button>
         <div class="content-container-nosotros" id="visionContent">
-            <p>
-                Ser la organización líder en la asistencia y acompañamiento a personas con pérdida auditiva, siendo fuente de esperanza esencial para el desarrollo de un México inclusivo, donde la oportunidad de escuchar esté al alcance de todos.
-            </p>
+            <div class="text-container">
+                <p>
+                    Ser la organización líder en la asistencia y acompañamiento a personas con pérdida auditiva, siendo fuente de esperanza esencial para el desarrollo de un México inclusivo, donde la oportunidad de escuchar esté al alcance de todos.
+                </p>
+            </div>
         </div>
 
         <button class="btn custom-button-nosotros" id="objetivoButton">
@@ -59,9 +65,11 @@
             <i class="bi bi-three-dots-vertical icon-right"></i>
         </button>
         <div class="content-container-nosotros" id="objetivoContent">
-            <p>
-                Promover la rehabilitación médica e integral de personas y grupos vulnerables que presentan algún tipo o grado de discapacidad auditiva.
-            </p>
+            <div class="text-container">
+                <p>
+                    Promover la rehabilitación médica e integral de personas y grupos vulnerables que presentan algún tipo o grado de discapacidad auditiva.
+                </p>
+            </div>
         </div>
     </div>
     
@@ -435,60 +443,62 @@
         <i class="bi bi-three-dots-vertical icon-right"></i>
     </button>   
         <div class="content-container" id="contactInfo">
-            <p>Respondemos todas tus dudas</p>
-            <div class="horario">
-                <div class="title">⭑HORARIO⭑</div>
-                <p> 
-                    Lunes a viernes de 8:00 a 19:00 horas<br>
-                    Sábados de 8:00 a 14:00 horas.
-                </p>
+            <div class="text-container">
+                <p>Respondemos todas tus dudas</p>
+                <div class="horario">
+                    <div class="title">⭑HORARIO⭑</div>
+                    <p> 
+                        Lunes a viernes de 8:00 a 19:00 horas<br>
+                        Sábados de 8:00 a 14:00 horas.
+                    </p>
+                </div> 
+                <div class="title">TELÉFONOS</div>
+                <button class="contact-btn" id="telephone" onclick="copyNumber('5528703319')">
+                    <i class="bi bi-telephone icon-left"></i>
+                    <span>55 2870 3319</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                    </svg>
+                </button>
+                <button class="contact-btn" id="telephone" onclick="copyNumber('5525807240')">
+                    <i class="bi bi-telephone icon-left"></i>
+                    <span>55 2580 7240</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                    </svg>              
+                </button>
+                <button class="contact-btn" id="telephone" onclick="copyNumber('5630004926')">
+                    <i class="bi bi-telephone icon-left"></i>
+                    <span>56 3000 4926</span>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                    </svg>               
+                </button>
+                <div class="title">WHATSAPP</div>
+                <button class="contact-btn" id="telephone" onclick="window.open('https://wa.me/5630004926', '_blank')">
+                    <i class="bi bi-whatsapp icon-left"></i>
+                    <span>56 3000 4926</span>
+                    <i class="bi bi-box-arrow-up-right"></i>                              
+                </button>
+                <button class="contact-btn" id="telephone" onclick="toggleEmail('emailContent1')">
+                    <i class="bi bi-envelope icon-left"></i>
+                    <span>CORREO</span>
+                    <i class="bi bi-chevron-compact-down icon-right"></i>               
+                </button>
+                <div id="emailContent1" class="email-content">
+                    contacto@mexicosinsordera.org.mx<br>
+                    <a href=https://mail.google.com/mail/?view=cm&fs=1&to=contacto@mexicosinsordera.org.mx">Enviar correo</a>
+                </div>               
+                <button class="contact-btn" id="telephone" onclick="toggleLocation()">
+                    <i class="bi bi-geo-alt icon-left"></i>
+                    <span>UBICACIÓN</span>
+                    <i class="bi bi-chevron-compact-down icon-right"></i>                              
+                </button>
+                <div id="locationContent" class="location-content">
+                    Zacatecas 155 Oficina 302 Roma Nte., Alcaldía Cuauhtémoc C.P. 06700, Ciudad de México.<br>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Zacatecas+155+Oficina+302+Roma+Nte.,+Alcaldía+Cuauhtémoc+C.P.+06700,+Ciudad+de+México" target="_blank">Ver en Google Maps</a>
+                </div>  
             </div> 
-            <div class="title">TELÉFONOS</div>
-            <button class="social-btn" id="add-phone" onclick="copyNumber('5528703319')">
-                <i class="bi bi-telephone-plus icon-left"></i>
-                <span>55 2870 3319</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                </svg>
-            </button>
-            <button class="social-btn" id="add-phone" onclick="copyNumber('5525807240')">
-                <i class="bi bi-telephone-plus icon-left"></i>
-                <span>55 2580 7240</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                </svg>              
-            </button>
-            <button class="social-btn" id="telephone" onclick="copyNumber('5630004926')">
-                <i class="bi bi-telephone icon-left"></i>
-                <span>56 3000 4926</span>  
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy icon-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                </svg>               
-            </button>
-            <div class="title">WHATSAPP</div>
-            <button class="social-btn" id="telephone" onclick="window.open('https://wa.me/5630004926', '_blank')">
-                <i class="bi bi-whatsapp icon-left"></i>
-                <span>56 3000 4926</span>
-                <i class="bi bi-box-arrow-up-right"></i>                              
-            </button>
-            <button class="social-btn" id="telephone" onclick="toggleEmail('emailContent1')">
-                <i class="bi bi-envelope icon-left"></i>
-                <span>CORREO</span>
-                <i class="bi bi-chevron-compact-down icon-right"></i>               
-            </button>
-            <div id="emailContent1" class="email-content">
-                contacto@mexicosinsordera.org.mx<br>
-                <a href=https://mail.google.com/mail/?view=cm&fs=1&to=contacto@mexicosinsordera.org.mx">Enviar correo</a>
-            </div>               
-            <button class="social-btn" id="telephone" onclick="toggleLocation()">
-                <i class="bi bi-geo-alt icon-left"></i>
-                <span>UBICACIÓN</span>
-                <i class="bi bi-chevron-compact-down icon-right"></i>                              
-            </button>
-            <div id="locationContent" class="location-content">
-                Zacatecas 155 Oficina 302 Roma Nte., Alcaldía Cuauhtémoc C.P. 06700, Ciudad de México.<br>
-                <a href="https://www.google.com/maps/search/?api=1&query=Zacatecas+155+Oficina+302+Roma+Nte.,+Alcaldía+Cuauhtémoc+C.P.+06700,+Ciudad+de+México" target="_blank">Ver en Google Maps</a>
-            </div>   
         </div>    
 
         <button class="btn custom-button" id="socialMediaButton">
@@ -759,7 +769,7 @@
             </div>
         </div>
         
-            <button class="btn custom-button" id="courseButton">
+            <!-- <button class="btn custom-button" id="courseButton">
                 <i class="bi bi-book icon-left"></i>
                 Registro al Curso
                 <i class="bi bi-three-dots-vertical icon-right"></i>
@@ -769,7 +779,7 @@
                     <i class="bi bi-arrow-right icon-left"></i>
                     <span>Regístrate al curso</span>               
                 </button>
-            </div>
+            </div> -->
     
             <button class="btn custom-button" id="eventsButton">
                 <i class="bi bi-calendar-event icon-left"></i>

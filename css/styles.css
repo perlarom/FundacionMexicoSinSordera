@@ -87,6 +87,7 @@ body {
 
 /*TEXTO*/
 /*NOMBRE*/
+
 p {
     color: #1e1e1e;
     text-align: center;
@@ -94,13 +95,18 @@ p {
 
 .title {
     font-family: 'CustomFont1', sans-serif;
-    font-size: 2em; 
+    font-size: 1.8em;
     font-weight: bold;
     color: #1e1e1e;
     letter-spacing: 0.1em; 
 }
 
 .social-btn span {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-btn span {
     flex: 1;
     text-align: center;
 }
@@ -289,9 +295,8 @@ p {
 .content-container-nosotros {
     background: linear-gradient(135deg, #46b8a9, #94c123); /* Degradado del color */
     padding: 10px;
-    margin-top: -20px;
+    margin-top: -12px;
     margin-bottom: 20px;
-    border-radius: 5px;
     display: none;
 }
 
@@ -318,8 +323,25 @@ p {
     margin: 10px auto;
     padding: 10px 20px;
     font-size: 1em;
-    color: #000;
+    color: black;
     background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #94c123;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -350,11 +372,20 @@ p {
     margin-right: 12px;
 }
 
+.contact-btn img {
+    margin-right: 12px;
+}
+
 .btn-menu img {
     margin-right: 12px;
 }
 
 .social-btn:hover {
+    background-color: #46b8a9;
+    color: #fff;
+}
+
+.contact-btn:hover {
     background-color: #46b8a9;
     color: #fff;
 }
@@ -504,6 +535,7 @@ p {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .donate-btn:hover {
@@ -532,11 +564,11 @@ p {
 }
 
 .location-content a {
-    color: #fff;
+    color: blue;
     text-decoration: none;
 }
 .location-content a:hover {
-    color: #fff;
+    color: blue;
     font-weight: bold;
 }
 

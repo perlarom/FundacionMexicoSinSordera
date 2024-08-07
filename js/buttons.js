@@ -77,16 +77,16 @@ document.getElementById('directoryHeader').addEventListener('click', function() 
     }
 });
 
-document.getElementById('courseButton').addEventListener('click', function() {
-    var courseContent = document.getElementById('courseContent');
-    if (courseContent.style.display === 'none' || courseContent.style.display === '') {
-        courseContent.style.display = 'block';
-        this.classList.add('active');
-    } else {
-        courseContent.style.display = 'none';
-        this.classList.remove('active');
-    }
-});
+// document.getElementById('courseButton').addEventListener('click', function() {
+//     var courseContent = document.getElementById('courseContent');
+//     if (courseContent.style.display === 'none' || courseContent.style.display === '') {
+//         courseContent.style.display = 'block';
+//         this.classList.add('active');
+//     } else {
+//         courseContent.style.display = 'none';
+//         this.classList.remove('active');
+//     }
+// });
 
 document.getElementById('donationButton').addEventListener('click', function() {
     var donationAccordion = document.getElementById('donationAccordion');
@@ -229,8 +229,8 @@ function hideCancelButton(cancelButton) {
         existingScript.remove();
     }
 
-    // Opcional: eliminar el contenedor mp-container si es necesario
-    mpContainer.innerHTML = ''; // Limpia el contenido del contenedor
+    // Limpia el contenido del contenedor mp-container
+    mpContainer.innerHTML = '';
 }
 
 function toggleInfo() {
