@@ -91,6 +91,9 @@ body {
 p {
     color: #1e1e1e;
     text-align: center;
+    font-family: 'FontText', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.06em; 
 }
 
 .title {
@@ -98,7 +101,7 @@ p {
     font-size: 1.8em;
     font-weight: bold;
     color: #1e1e1e;
-    letter-spacing: 0.1em; 
+    letter-spacing: 0.1em;
 }
 
 .social-btn span {
@@ -122,10 +125,10 @@ p {
     background-color: #94c123;
     color: #fff; 
     margin-bottom: 10px;
-    /*font-family: 'FontSubtitles', sans-serif;*/
+    font-family: 'FontSubtitles', sans-serif;
     border: none;
     font-size: 1.1em;
-    font-weight: bold;
+    letter-spacing: 0.05em; 
 }
 
 .custom-button-nosotros {
@@ -133,10 +136,10 @@ p {
     background: linear-gradient(135deg, #46b8a9, #94c123); /* Degradado del color */
     color: #fff; 
     margin-bottom: 10px;
-    /*font-family: 'FontSubtitles', sans-serif;*/
+    font-family: 'FontSubtitles', sans-serif;
     border: none;
     font-size: 1.1em;
-    font-weight: bold;
+    letter-spacing: 0.05em; 
 }
 
 .custom-button-nosotros.active {
