@@ -386,16 +386,18 @@ p {
 
 /* DONACIÓN */
 .donation-container {
-    display: block;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.donation-item{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    justify-content: flex-start;
-    flex-direction: column;
     text-align: center; 
+    width: 200px;
     box-sizing: border-box;
 }
 .MercadoPagoLogo {
@@ -669,7 +671,7 @@ display: none;
 
     .modal-body {
         flex-direction: column;
-    }
+    }d7w
 
     .content-section {
         flex-direction: column;
