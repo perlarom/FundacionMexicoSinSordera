@@ -75,7 +75,7 @@ p {
     margin-bottom: 10px;
     font-family: 'FontSubtitles', sans-serif;
     border: none;
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 0.05em; 
 }
 .custom-button.active {
@@ -328,7 +328,6 @@ p {
     width: 200px;
     box-sizing: border-box;
     text-align: center;
-    background-color: #f9f9f9;
 }
 
 /*DIRECTORIO*/
