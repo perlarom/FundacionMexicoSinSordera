@@ -150,6 +150,20 @@ function copyNumber(phoneNumber) {
         console.error('Error al copiar el número: ', err);
     });
 }
+function copyDonationNumber(donationNumber) {
+    navigator.clipboard.writeText(donationNumber).then(() => {
+        alert('Número de cuenta copiado: ' + donationNumber);
+    }).catch(err => {
+        console.error('Error al copiar el número: ', err);
+    });
+}
+function copyClaveNumber(claveNumber) {
+    navigator.clipboard.writeText(claveNumber).then(() => {
+        alert('Número de clave copiado: ' + claveNumber);
+    }).catch(err => {
+        console.error('Error al copiar el número: ', err);
+    });
+}
 /*Ver correos*/
 function toggleEmail(id) {
     var emailContent = document.getElementById(id);
