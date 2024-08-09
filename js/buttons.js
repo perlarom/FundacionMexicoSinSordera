@@ -142,7 +142,7 @@ function toggleInfo() {
         moreInfo.style.display = "block";
     }
 }
-/*COPIAR EL NUMERO*/
+/*COPIAR NÚMEROS*/
 function copyNumber(phoneNumber) {
     navigator.clipboard.writeText(phoneNumber).then(() => {
         alert('Número copiado al portapapeles: ' + phoneNumber);
@@ -164,6 +164,7 @@ function copyClaveNumber(claveNumber) {
         console.error('Error al copiar el número: ', err);
     });
 }
+
 /*Ver correos*/
 function toggleEmail(id) {
     var emailContent = document.getElementById(id);
@@ -175,19 +176,7 @@ function toggleLocation() {
     locationContent.classList.toggle("show");
 }
 
-function toggleEmailDirectory() {
-    var emailContentDirectory = document.getElementById("emailContentDirectory");
-    emailContentDirectory.classList.toggle("show");
-}
-
-function toggleBankInfo() {
-    var content = document.getElementById('bankInfoContent');
-    if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
-    } else {
-        content.classList.add('hidden');
-    }
-}
+/*Donación*/
 
 function showCancelButton(donateButton, preferenceId) {
     // Encuentra el contenedor de donación más cercano al botón
@@ -259,6 +248,7 @@ function toggleInfo() {
     }
 }
 
+//MODAL//
 function openModal() {
     document.getElementById('infoModal').style.display = "flex";
 }
@@ -274,34 +264,3 @@ window.onclick = function(event) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
-
-    function updateCarousel() {
-        items.forEach((item, index) => {
-            item.classList.remove('active', 'prev', 'next');
-            if (index === currentIndex) {
-                item.classList.add('active');
-            } else if (index === (currentIndex + 1) % totalItems) {
-                item.classList.add('next');
-            } else if (index === (currentIndex - 1 + totalItems) % totalItems) {
-                item.classList.add('prev');
-            }
-        });
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        updateCarousel();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-        updateCarousel();
-    }
-
-    setInterval(nextSlide, 5000);
-    updateCarousel();
-});

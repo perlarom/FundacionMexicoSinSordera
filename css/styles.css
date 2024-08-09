@@ -1,12 +1,5 @@
 /*Fuentes(Tipografía)*/
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/dk_crayon_crumble/DK\ Crayon\ Crumble.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'FontSubtitles';
     src: url('../fonts/sweet_creamy_2/Sweet Creamy.otf') format('opentype');
     font-weight: normal;
@@ -47,47 +40,18 @@ body {
     word-wrap: break-word;
 }
 
-/*Media query*/
-@media (min-width: 768px) {
-    .container {
-        max-width: 60%;
-    }
-}
-
-/*Imagenes*/
+/*Imagenes PRINCIPALES*/
 .logo {
     max-height: 150px;
     width: auto;
     margin-bottom: 10px;
-    /*border-radius: 50%;*/
 }
-
 .mascota {
     max-height: 100px;
     width: auto;
 }
 
-@keyframes bounceIn {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-.word-wrapper {
-    white-space: nowrap;
-    display: inline-block;
-}
-
 /*TEXTO*/
-/*NOMBRE*/
-
 p {
     color: #1e1e1e;
     text-align: center;
@@ -95,28 +59,12 @@ p {
     font-weight: bold;
     letter-spacing: 0.06em; 
 }
-
 .title {
     font-family: 'CustomFont1', sans-serif;
     font-size: 1.8em;
     font-weight: bold;
     color: #1e1e1e;
     letter-spacing: 0.1em;
-}
-
-.social-btn span {
-    flex: 1;
-    text-align: center;
-}
-
-.contact-btn span {
-    flex: 1;
-    text-align: center;
-}
-
-.btn-menu span {
-    flex: 1;
-    text-align: center;
 }
 
 /*BOTONES PRINCIPALES*/
@@ -130,10 +78,97 @@ p {
     font-size: 1em;
     letter-spacing: 0.05em; 
 }
+.custom-button.active {
+    color: #fff; 
+}
+/*ICONOS*/
+#socialMediaButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#socialMediaButton i {
+    margin: 0 5px;
+}
+#contactUsButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#contactUsButton i {
+    margin: 0 5px;
+}
+#directoryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#directoryHeader i {
+    margin: 0 5px;
+}
+#courseButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#courseButton i {
+    margin: 0 5px;
+}
+#donationButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#donationButton i {
+    margin: 0 5px;
+}
+#signalsButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#signalsButton i {
+    margin: 0 5px;
+}
+#eventsButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#productsButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#productsButton i {
+    margin: 0 5px;
+}
+#add-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#telephone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
 
+
+/*Para saber más-BOTONES*/
 .custom-button-nosotros {
     width: 100%;
-    background: linear-gradient(135deg, #46b8a9, #94c123); /* Degradado del color */
+    background: linear-gradient(135deg, #46b8a9, #94c123); 
     color: #fff; 
     margin-bottom: 10px;
     font-family: 'FontSubtitles', sans-serif;
@@ -141,151 +176,48 @@ p {
     font-size: 1em;
     letter-spacing: 0.05em; 
 }
-
 .custom-button-nosotros.active {
     color: #fff; 
 }
-
-.custom-button.active {
-    color: #fff; 
-}
-
 #nosotrosButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-
+#nosotrosButton i {
+    margin: 0 5px;
+}
 #misionButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-
+#misionButton i {
+    margin: 0 5px;
+}
 #visionButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-
+#visionButton i {
+    margin: 0 5px;
+}
 #objetivoButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-
-#socialMediaButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#contactUsButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#directoryHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#courseButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#donationButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#signalsButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#youtubeButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#eventsButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#productsButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#nosotrosButton i {
-    margin: 0 5px;
-}
-#misionButton i {
-    margin: 0 5px;
-}
-#visionButton i {
-    margin: 0 5px;
-}
 #objetivoButton i {
     margin: 0 5px;
 }
-#socialMediaButton i {
-    margin: 0 5px;
-}
 
-#contactUsButton i {
-    margin: 0 5px;
-}
 
-#directoryHeader i {
-    margin: 0 5px;
-}
-
-#courseButton i {
-    margin: 0 5px;
-}
-
-#donationButton i {
-    margin: 0 5px;
-}
-
-#signalsButton i {
-    margin: 0 5px;
-}
-
-#youtubeButton i {
-    margin: 0 5px;
-}
-
-#productsButton i {
-    margin: 0 5px;
-}
-
-/*CONTENEDOR DE LOS BOTONES* PRINCIPALES*/
+/*CONTENEDOR DE LOS BOTONES PRINCIPALES*/
 .content-container {
     background-color: #94c123;
     padding: 10px;
@@ -295,20 +227,13 @@ p {
     display: none;
 }
 
+/*CONTENEDOR DE LOS BOTONES PARA SABER MÁS*/
 .content-container-nosotros {
-    background: linear-gradient(135deg, #46b8a9, #94c123); /* Degradado del color */
+    background: linear-gradient(135deg, #46b8a9, #94c123); 
     padding: 10px;
     margin-top: -12px;
     margin-bottom: 20px;
     display: none;
-}
-
-.content-container-white {
-    background-color: #ffffff;
-    padding: 10px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
 }
 
 /*Iconos de Redes sociales*/
@@ -318,7 +243,7 @@ p {
     font-size: 24px !important; 
 }
 
-/*BOTONES SECUNDARIOS*/
+/*BOTON SECUNDARIO (SOCIAL)*/
 .social-btn {
     display: flex;
     align-items: center;
@@ -335,7 +260,19 @@ p {
     width: 75%;
     margin-bottom: 10px;
 }
+.social-btn:hover {
+    background-color: #46b8a9;
+    color: #fff;
+}
+.social-btn img {
+    margin-right: 12px;
+}
+.social-btn span {
+    flex: 1;
+    text-align: center;
+}
 
+/*BOTON SECUNDARIO (CONTACTO)*/
 .contact-btn {
     display: flex;
     align-items: center;
@@ -352,7 +289,49 @@ p {
     width: 75%;
     margin-bottom: 10px;
 }
+.contact-btn:hover {
+    background-color: #46b8a9;
+    color: #fff;
+}
+.contact-btn img {
+    margin-right: 12px;
+}
+.contact-btn span {
+    flex: 1;
+    text-align: center;
+}
 
+/*SEÑALES AUDITIVAS*/
+.grid-item img {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+}
+.circle-auditive {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+    background-color: #46b8a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.grid-item {
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/*DIRECTORIO*/
 .btn-menu {
     display: flex;
     align-items: center;
@@ -369,113 +348,22 @@ p {
     width: 75%;
     margin-bottom: 10px;
 }
-
-/****ICONOS****/
-.social-btn img {
-    margin-right: 12px;
-}
-
-.contact-btn img {
-    margin-right: 12px;
-}
-
-.btn-menu img {
-    margin-right: 12px;
-}
-
-.social-btn:hover {
-    background-color: #46b8a9;
-    color: #fff;
-}
-
-.contact-btn:hover {
-    background-color: #46b8a9;
-    color: #fff;
-}
-
 .btn-menu:hover {
     background-color: #94c123;
     color: #fff;
 }
-
-#add-phone {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+.btn-menu img {
+    margin-right: 12px;
 }
-
-#telephone {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.email-content {
-    display: none;
+.btn-menu span {
+    flex: 1;
     text-align: center;
-    margin-top: 10px;
 }
-
-.email-content.show {
-    display: block;
-}
-
-.show {
-    display: block !important;
-}
-
-.location-content {
-    display: none;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.location-content.show {
-    display: block;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr)); 
-    padding: 0 20px;
-}
-
-.grid-item {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.grid-item img {
-    border-radius: 50%;
-    width: 100px; 
-    height: 100px;
-}
-
-.grid-item .circle {
-    width: 120px; 
-    height: 120px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; 
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, minmax(100px, 1fr)); 
-    }
-}
-
 .card-header {
     background-color: #46b8a9;
     padding: 10px;
     cursor: pointer;
 }
-
 .btn-link{
     color: #fff; 
 }
@@ -483,26 +371,20 @@ p {
     margin: 0;
     color: #fff;
 }
-
 .card-body {
     background-color: #46b8a9; 
     color: #000;
     padding: 20px;
 }
-
 .card-body .title {
     font-size: 1.5em;
     color: black; 
 }
-
 .hidden {
     display: none;
 }
-.bank-info {
-    margin-top: 10px;
-}
 
-/* Estilos para los contenedores de donación */
+/* DONACIÓN */
 .donation-container {
     display: block;
     align-items: center;
@@ -513,23 +395,18 @@ p {
     background-color: #fff;
     justify-content: flex-start;
     flex-direction: column;
-    text-align: center; /* Centra el texto dentro del contenedor */
+    text-align: center; 
     box-sizing: border-box;
 }
-
-/* Estilos para el logo de Mercado Pago */
 .MercadoPagoLogo {
     width: 100px;
-    height: auto; /* ajusta el tamaño según sea necesario */
+    height: auto; 
     margin-bottom: auto;
 }
-
-/* Estilos para el texto y botón de donación */
 .donation-container p {
     margin: 0;
     font-size: 18px;
 }
-
 .donate-btn {
     margin-left: auto;
     padding: 8px 16px;
@@ -540,32 +417,56 @@ p {
     cursor: pointer;
     margin-top: 10px;
 }
-
 .donate-btn:hover {
     background-color: #0056b3;
 }
+.cancel-btn {
+    background-color: red; 
+    color: white;
+    border: none; 
+    padding: 9px 10px; 
+    cursor: pointer; 
+    margin-right: 10px;
+    font-size: 14px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+.cancel-btn:hover {
+    background-color: darkred; 
+}
 
+/*MÁS INFORMACIÓN*/
 .more-info {
     display: none;
     margin-top: 10px;
     text-align: left;
 }
-
 .more-info-toggle {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
 }
 
+/*CORREOS*/
 .email-content a {
-    color: #fff;
+    color: blue;
     text-decoration: none;
 }
 .email-content a:hover {
-    color: #fff;
+    color: blue;
     font-weight: bold;
 }
+.email-content {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.email-content.show {
+    display: block;
+}
 
+/*UBICACIÓN*/
 .location-content a {
     color: blue;
     text-decoration: none;
@@ -574,35 +475,28 @@ p {
     color: blue;
     font-weight: bold;
 }
-
-.cancel-btn {
-    background-color: red; /* Color de fondo rojo */
-    color: white; /* Color del texto blanco */
-    border: none; /* Sin borde */
-    padding: 9px 10px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cursor de puntero */
-    margin-right: 10px;
-    font-size: 14px; /* Tamaño de fuente */
-    border-radius: 4px; /* Bordes redondeados más pequeños */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+.show {
+    display: block !important;
+}
+.location-content {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.location-content.show {
+    display: block;
 }
 
-.cancel-btn:hover {
-background-color: darkred; /* Color de fondo rojo oscuro al pasar el ratón */
-}
-
+/*PRODUCTOS Y SERVICIOS*/
 .hidden {
 display: none;
 }
-
 .mp-container {
     display: flex;
-    align-items: center; /* Alinea verticalmente al centro */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-top: 10px; /* Espacio entre el botón de cancelar y el contenedor del pago */
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 10px; 
 }
-
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -617,11 +511,11 @@ display: none;
     box-sizing: border-box;
     text-align: center;
     background-color: #f9f9f9;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave para el color de fondo y el escalado */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .product-item:hover {
     transform: scale(1.05);
-    background-color: rgba(70, 184, 169, 0.7); /* Color #46b8a9 con un poco de transparencia */
+    background-color: rgba(70, 184, 169, 0.7);
 }
 .product-image {
     width: 100%;
@@ -679,7 +573,6 @@ display: none;
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
-
 .close {
     color: grey;
     position: absolute;
@@ -699,7 +592,6 @@ display: none;
     justify-content: space-around;
     align-items: center;
 }
-
 .circle {
     width: 150px;
     height: 150px;
@@ -713,64 +605,58 @@ display: none;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(70, 184, 169, 0.8), 0 4px 8px rgba(148, 193, 35, 0.8);
 }
-
 .circle p {
     margin: 0;
     font-size: 14px;
     color: white;
 
 }
-
 .circle-text {
-    font-weight: bold; /* Negrita para el texto de UBICACIÓN y AFORO */
+    font-weight: bold; 
 }
-
 .modal-body {
     display: flex;
     flex-direction: column;
-   /* gap: 20px; */
    align-items: center;
    justify-content: center;
 }
-
 .content-section {
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
     margin-bottom: 20px;
 }
-
 .side-image {
     width: 200px;
     height: auto;
-    margin-right: 20px; /* Margen derecho para la primera imagen */
+    margin-right: 20px; 
 }
-
 .content-section:last-child .side-image {
-    margin-left: 20px; /* Margen izquierdo para la segunda imagen */
+    margin-left: 20px; 
     margin-right: 0;
 }
-
 .text-content {
     flex: 1;
    text-align: left;
 }
 
-
+/*Medias querys*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 60%;
+    }
+}
 @media (max-width: 1200px) {
     .modal-content {
         width: 60%;
         height: 40%;
     }
 }
-
 @media (max-width: 992px) {
     .modal-content {
         width: 65%;
         height: 50%;
     }
 }
-
 @media (max-width: 768px) {
     .modal-content {
         width: 70%;
@@ -814,7 +700,6 @@ display: none;
         margin-left: 0;
     }
 }
-
 @media (max-width: 576px) {
     .modal-content {
         width: 80%;
@@ -828,5 +713,10 @@ display: none;
     .circle{
         width: 150px;
         height: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(100px, 1fr)); 
     }
 }
